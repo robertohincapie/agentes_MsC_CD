@@ -1,3 +1,17 @@
+Metadata-Version: 2.4
+Name: agentes-maestria-cd
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi[standard]>=0.128.7
+Requires-Dist: langchain>=1.2.10
+Requires-Dist: langchain-anthropic>=1.3.2
+Requires-Dist: langchain-community>=0.4.1
+Requires-Dist: langchain-openai>=1.1.8
+Requires-Dist: langchain-tavily>=0.2.17
+Requires-Dist: langgraph>=1.0.8
+
 # agentes_maestria_CD
 # Se debe tener instalado UV
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -22,6 +36,8 @@ uv add langchain-community
 # run the agent
 #uv run langgraph dev
 
+
+
 # instalar el proyecto con la estructura apropiada
 uv pip install -e .
 
@@ -30,11 +46,8 @@ uv pip install -e .
 # En el proyecto necesitamos python >=3.12
 https://www.python.org/downloads/windows/
 
-# Cuando se copia el repositorio y se debe poder correr, primero verificar que UV esté instalado. 
-# Que haya una versión de Python >=3.12 instalada. Luego: 
 # Creación del ambiente virtual:
 uv venv
+
 # Instalar los paquetes desde UV al ambiente creado. 
 uv sync
-# Instalar el repositorio como un conjuntode paquetes
-uv pip install -e .
